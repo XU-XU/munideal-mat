@@ -1,0 +1,11 @@
+<mat-list>
+  <h4 mat-subheader>Today's Todo</h4>
+  <form>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="text">
+    <button>Save</button>
+  </form>
+  <mat-list-item *ngFor="let task of tasks">
+    <app-task-item [task]="task"></app-task-item>
+  </mat-list-item>
+</mat-list>

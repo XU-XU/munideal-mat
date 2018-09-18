@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>
+  Quick Add New Order
+</h2>
+
+<mat-dialog-content class="post-form">
+  <form [formGroup]="orderForm">
+    <mat-form-field>
+      <input matInput placeholder="Order NO." formControlName="orderNo" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Client" formControlName="client" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Destination" formControlName="destination" />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="Amount" formControlName="amount" />
+    </mat-form-field><br>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="ETD" formControlName="etd">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    </mat-form-field>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-form-field>
+      <input matInput placeholder="Payment" formControlName="payment" />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput placeholder="Status" formControlName="status" />
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-button color="primary">Submit</button>
+  <button mat-button mat-dialog-close color="warn">Cancel</button>
+</mat-dialog-actions>

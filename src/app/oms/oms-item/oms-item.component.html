@@ -1,0 +1,16 @@
+<div class="oms-item card">
+  <div class="content">
+    <div class="basic-info">
+          <span>JSS18-0002999</span>
+          <span>Pulito | Japan</span>
+    </div>
+    <div>$16000</div>
+  </div>
+  <div class="status">
+    <button mat-button [matMenuTriggerFor]="menu">Manufacturing</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Ask for payment</button>
+      <button mat-menu-item>Booking shipment</button>
+    </mat-menu>
+  </div>
+</div>

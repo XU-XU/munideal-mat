@@ -1,0 +1,28 @@
+.oms-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: rgb(76, 77, 157);
+}
+
+.card {
+    padding: 5px;
+    border-radius: 5px;
+    // border: 1px solid #eee;
+    box-shadow: rgb(198, 200, 208) 0 2px 10px 1px;
+    background-color: white;
+}
+
+.card:hover {
+    background-color: rgb(244, 253, 247);
+}
+
+.basic-info {
+    display: flex;
+    justify-content: space-between;
+}

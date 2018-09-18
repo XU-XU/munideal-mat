@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="loginForm">
+      <mat-form-field>
+        <input matInput type="email" formControlName="email" placeholder="Email">
+      </mat-form-field>
+    <mat-form-field>
+        <input matInput type="password" formControlName="password" placeholder="password">
+    </mat-form-field>
+    <button mat-button>Log in</button>
+  </form>
+  <div><a href="">Forget password?</a></div>
+  <div><a routerLink="/register">Register</a></div>
+</div>
